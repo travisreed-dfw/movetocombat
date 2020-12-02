@@ -1,7 +1,7 @@
 {
-  "name": "nucampsite",
+  "name": "movetocombat",
   "version": "1.0.0",
-  "description": "This is a website for the fictional campsites review site NuCamp.",
+  "description": "This is a website for the fictional game shop.",
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
@@ -20,7 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^2.2.0",
-    "imagemin-cli": "^5.1.0",
+    "imagemin-cli": "^6.0.0",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.0",
