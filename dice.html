@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROLL20</title>
+  </head>
+  <body>
+    <div><p id="diceValue">##</p></div>
+    <div><button>ROLL</button></div>
+    <script>
+      const para = document.getElementById('diceValue');
+      const diceButton = document.querySelector('button');
+      diceButton.addEventListener('click', rollNow);
+
+      const randomValue = (min, max) =>
+        Math.floor(
+          Math.random() * (Math.floor(max) - Math.ceil(min)) + Math.ceil(min)
+        );
+
+      function rollNow() {
+        let dice = randomValue(1, 20);
+        para.innerHTML = dice;
+      }
+    </script>
+  </body>
+</html>
