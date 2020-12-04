@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROLL20</title>
+    <title>ROLL 1-20</title>
   </head>
 
   <body>
@@ -11,28 +11,32 @@
     <div><p id="diceValue">##</p></div>
 
     <!-- Button press to roll -->
+    
     <div><button>ROLL</button></div>
 
+    <div><a href="/index.html">Home</a></div>
+
     <script>
-      // Shorthand variable for paragraph selection
-      const para = document.getElementById('diceValue');
-      // Shorthand variable for button selection
-      const diceButton = document.querySelector('button');
-      // Event listener for button
-      diceButton.addEventListener('click', rollNow);
+        // Shorthand variable for paragraph selection
+        const para = document.getElementById('diceValue');
+        // Shorthand variable for button selection
+        const diceButton = document.querySelector('button');
+        // Event listener for button
+        diceButton.addEventListener('click', rollNow);
 
-      // Function for roll, takes two numbers and randomly selects a number between them
-      // (Inclusive of lowest number, exclusive of highest number)
-      const randomValue = (min, max) =>
-        Math.floor(
-          Math.random() * (Math.floor(max) - Math.ceil(min)) + Math.ceil(min)
-        );
+        // Function for roll, takes two numbers and randomly selects a number between them
+        // (Inclusive of lowest number, exclusive of highest number)
+        const randomValue = (min, max) =>
+          Math.floor(
+            Math.random() * (Math.floor(max) - Math.ceil(min)) + Math.ceil(min)
+          );
 
-      // Function on button click to roll the number and change the paragraph to the value of the roll
-      function rollNow() {
-        let dice = randomValue(1, 21);
-        para.innerHTML = dice;
-      }
+        // Function on button click to roll the number and change the paragraph to the value of the roll
+        function rollNow() {
+          let dice = randomValue(1, 21);
+          para.innerHTML = dice;
+        }
     </script>
+
   </body>
 </html>
