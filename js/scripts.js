@@ -1,6 +1,6 @@
 $(function () {
   // BEGIN CAROUSEL BUTTONS
-  $('.carousel').carousel({ interval: 2000 });
+  $('.carousel').carousel({ interval: 4000 });
   $('#carouselButton').click(function () {
     if ($('#carouselButton').children('i').hasClass('fa-pause')) {
       $('.carousel').carousel('pause');

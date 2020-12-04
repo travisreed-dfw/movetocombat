@@ -1,8 +1,8 @@
-$color-primary: #3046c5;
-$color-secondary: #5637dd;
-$color-pale: #cec8ff;
-$color-mid: #901cad;
-$color-dark: #60106b;
+$color-primary: goldenrod;
+$color-secondary: maroon;
+$color-pale: maroon;
+$color-mid: black;
+$color-dark: black;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 $color-teal: #17a2b8;
 
@@ -11,6 +11,29 @@ $header-font: 'Lobster', cursive;
 
 body {
   font-family: $body-font;
+  background-color: #434343;
+  color: white;
+}
+
+.fa {
+  color: $color-primary;
+}
+
+
+#logo {
+  position: absolute;
+  z-index: 1;
+  // Use your own values for anything below this line.
+  left: 10px;
+  top: 10px;
+  height: 62px;
+  width: 200px;
+}
+
+@media screen and (max-width: 575px) {
+  .homeItem {
+  margin-top: 40px;
+}
 }
 
 h1,
@@ -29,20 +52,11 @@ header {
   }
 }
 
-.site-footer {
-  background-image: linear-gradient($color-pale, white);
-  padding: 20px 0;
-}
 
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(
-    to right,
-    $color-secondary,
-    $color-primary,
-    $color-dark
-  );
+  background-image: linear-gradient($color-secondary, $color-dark);
   color: white;
 }
 
@@ -52,12 +66,13 @@ header {
   min-height: 200px;
 }
 
-.navbar {
-  background-color: $color-mid;
+.navbar, .dropdown-menu, .dropdown-item{
+  background-color: $color-dark;
+  color: white;
 }
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
+  background-image: linear-gradient($color-dark, $color-secondary);
   padding: 20px 0;
 }
 
@@ -71,6 +86,8 @@ header {
 
 .carousel {
   border: solid $color-secondary;
+  max-height: 406px;
+  max-width: 610px;
 }
 
 #carouselButton {
@@ -82,7 +99,7 @@ header {
 
 #loginModal {
   .modal-header {
-    background-color: $color-mid;
+    background-color: $color-dark;
     color: white;
   }
 }
@@ -93,3 +110,4 @@ header {
     color: white;
   }
 }
+

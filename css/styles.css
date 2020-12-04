@@ -1,5 +1,22 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  background-color: #434343;
+  color: white; }
+
+.fa {
+  color: goldenrod; }
+
+#logo {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+  height: 62px;
+  width: 200px; }
+
+@media screen and (max-width: 575px) {
+  .homeItem {
+    margin-top: 40px; } }
 
 h1,
 h2,
@@ -7,19 +24,15 @@ h3 {
   font-family: "Lobster", cursive; }
 
 h2 {
-  color: #3046c5; }
+  color: goldenrod; }
 
 header h2 {
-  color: #cec8ff; }
-
-.site-footer {
-  background-image: linear-gradient(#cec8ff, white);
-  padding: 20px 0; }
+  color: maroon; }
 
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+  background-image: linear-gradient(maroon, black);
   color: white; }
 
 .row-content {
@@ -27,11 +40,12 @@ header h2 {
   border-bottom: 1px ridge;
   min-height: 200px; }
 
-.navbar {
-  background-color: #901cad; }
+.navbar, .dropdown-menu, .dropdown-item {
+  background-color: black;
+  color: white; }
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
+  background-image: linear-gradient(black, maroon);
   padding: 20px 0; }
 
 .carousel-caption {
@@ -41,7 +55,9 @@ header h2 {
   background-color: rgba(0, 0, 0, 0.2); }
 
 .carousel {
-  border: solid #5637dd; }
+  border: solid maroon;
+  max-height: 406px;
+  max-width: 610px; }
 
 #carouselButton {
   position: absolute;
@@ -50,7 +66,7 @@ header h2 {
   z-index: 100; }
 
 #loginModal .modal-header {
-  background-color: #901cad;
+  background-color: black;
   color: white; }
 
 #reserveModal .modal-header {
