@@ -52,13 +52,6 @@ header {
   }
 }
 
-
-.jumbotron {
-  // margin: 0;
-  // padding: 30px;
-  
-}
-
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
@@ -123,4 +116,7 @@ header {
   p{
     font-size: 2rem;
   }
+}
+.card {
+  background-color: $color-black-transparent;
 }

@@ -76,3 +76,6 @@ header h2 {
 
 .drinkList p {
   font-size: 2rem; }
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5); }
