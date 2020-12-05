@@ -54,10 +54,9 @@ header {
 
 
 .jumbotron {
-  margin: 0;
-  padding: 30px;
-  background-image: linear-gradient($color-secondary, $color-dark);
-  color: white;
+  // margin: 0;
+  // padding: 30px;
+  
 }
 
 .row-content {
@@ -111,3 +110,17 @@ header {
   }
 }
 
+.tavernBanner {
+  background-image: url("/img/TavernBanner.jpg") ;
+}
+
+.dranks {
+  color: $color-primary;
+  font-size: 4rem;
+}
+
+.drinkList {
+  p{
+    font-size: 2rem;
+  }
+}

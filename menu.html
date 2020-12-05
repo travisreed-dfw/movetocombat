@@ -1,157 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- build:css css/main.css -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- endbuild -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
-    />
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Move to Combat: A Better Way To Play</title>
-  </head>
-  <!-- BEGIN WEBSITE BODY -->
-  <body>
-    <!-- BEGIN NAV BAR -->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="img/logo.png" id="logo"
-        /></a>
-        <button
-          class="navbar-toggler navbar-toggler-icon ml-auto"
-          type="button"
-          data-toggle="collapse"
-          data-target="#nucampNavbar"
-        ></button>
-        <div class="collapse navbar-collapse homeItem" id="nucampNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="/index.html"
-                ><i class="fa fa-home fa-lg"></i> Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/events.html"
-                ><i class="fa fa-calendar fa-lg"></i> Events</a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                ><i class="fa fa-glass fa-lg"></i> Menu</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                WUBRG Rooms
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item disabled" href="#"
-                  >Plains Room <i class="fa fa-star-o"></i
-                ></a>
-                <a class="dropdown-item disabled" href="#"
-                  >Island Room <i class="fa fa-star-o"></i
-                ></a>
-                <a class="dropdown-item" href="/roomswamp.html"
-                  >Swamp Room <i class="fa fa-star"></i
-                ></a>
-                <a class="dropdown-item disabled" href="#"
-                  >Mountain Room <i class="fa fa-star-o"></i
-                ></a>
-                <a class="dropdown-item disabled" href="#"
-                  >Forest Room <i class="fa fa-star-o"></i
-                ></a>
-              </div>
-            </li>
-          </ul>
-        </div>
+  <!-- build:css css/main.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+  <title>Move to Combat: A Better Way To Play</title>
+</head>
+<!-- BEGIN WEBSITE BODY -->
+
+<body>
+  <!-- BEGIN NAV BAR -->
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" id="logo" /></a>
+      <button class="navbar-toggler navbar-toggler-icon ml-auto" type="button" data-toggle="collapse"
+        data-target="#nucampNavbar"></button>
+      <div class="collapse navbar-collapse homeItem" id="nucampNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="/index.html"><i class="fa fa-home fa-lg"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/events.html"><i class="fa fa-calendar fa-lg"></i> Events</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><i class="fa fa-glass fa-lg"></i> Menu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              WUBRG Rooms
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item disabled" href="#">Plains Room <i class="fa fa-star-o"></i></a>
+              <a class="dropdown-item disabled" href="#">Island Room <i class="fa fa-star-o"></i></a>
+              <a class="dropdown-item" href="/roomswamp.html">Swamp Room <i class="fa fa-star"></i></a>
+              <a class="dropdown-item disabled" href="#">Mountain Room <i class="fa fa-star-o"></i></a>
+              <a class="dropdown-item disabled" href="#">Forest Room <i class="fa fa-star-o"></i></a>
+            </div>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- END NAV BAR -->
-    <!-- BEGIN WEBSITE BODY -->
+    </div>
+  </nav>
+  <!-- END NAV BAR -->
+  <!-- BEGIN WEBSITE BODY -->
+<div class="container">
+  <div class="row">
+    <div class="col drinkList"><hr>
+      <h1 class="dranks"><i class="fa fa-beer fa-lg"></i> Beer</h1>
+      <p> Dumpster Diver<strong> $7</strong></p> 
+      <p>Error<strong> $4.04</strong></p>
+      <p> Strongjaw Ale<strong> $12</strong></p>
+      <p> Dumpster Diver<strong> $10</strong></p> 
+      <p>Error<strong> $2</strong></p>
+      <p> nostrum possimus.<strong> $4</strong></p>
+      <p> Dumpster Diver<strong> $8</strong></p> 
+      <p>Error<strong> $13</strong></p>
+      <p> nostrum possimus.<strong> $16</strong></p>
+      <p> Swamp Ass<strong> $20</strong></p> 
+      <p>The Epstein didn't kill himself<strong> $17</strong></p>
+      <p> nostrum possimus.<strong> $12</strong></p>
+      </div>
+    <div class="col drinkList"><hr>
+      <h1 class="dranks"><i class="fa fa-glass fa-lg"></i> Cocktails</h1>
+      <p> Dumpster Diver<strong> $2</strong></p> 
+      <p>Error<strong> $4.04</strong></p>
+      <p> nostrum possimus.<strong> $12</strong></p>
+    </div>
+</div>
+
+  <!-- END WEBSITE BODY -->
+  <!-- BEGIN FOOTER -->
+  <footer class="site-footer fixed-bottom">
     <div class="container">
       <div class="row">
-        <div class="col">
-          
+        <div class="col-4 col-sm-2 offset-1">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/events.html">Events</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+          <h5>Social</h5>
+          <a class="" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a class="" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a role="button" class="btn btn-link" href="tel:+18008886499"><i class="fa fa-phone"></i>
+            1-800-888-6499</a><br />
+          <a role="button" class="btn btn-link" href="mailto:Questions@Answers.net"><i class="fa fa-envelope-o"></i>
+            Questions@Answers.net</a>
         </div>
       </div>
     </div>
-    <!-- END WEBSITE BODY -->
-    <!-- BEGIN FOOTER -->
-    <footer class="site-footer fixed-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-sm-2 offset-1">
-            <h5>Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/events.html">Events</a></li>
-              <li><a href="#">Menu</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-sm-5 text-center">
-            <h5>Social</h5>
-            <a class="" href="http://instagram.com/"
-              ><i class="fa fa-instagram"></i
-            ></a>
-            <a class="" href="http://facebook.com/"
-              ><i class="fa fa-facebook"></i
-            ></a>
-            <a class="" href="http://twitter.com/"
-              ><i class="fa fa-twitter"></i
-            ></a>
-            <a class="" href="http://youtube.com/"
-              ><i class="fa fa-youtube"></i
-            ></a>
-          </div>
-          <div class="col-sm-4 text-center">
-            <a role="button" class="btn btn-link" href="tel:+18008886499"
-              ><i class="fa fa-phone"></i> 1-800-888-6499</a
-            ><br />
-            <a
-              role="button"
-              class="btn btn-link"
-              href="mailto:Questions@Answers.net"
-              ><i class="fa fa-envelope-o"></i> Questions@Answers.net</a
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- END FOOTER -->
+  </footer>
+  <!-- END FOOTER -->
 
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
-  </body>
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
+</body>
 
-  <!-- END WBESITE BODY -->
+<!-- END WBESITE BODY -->
+
 </html>
